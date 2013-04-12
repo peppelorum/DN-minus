@@ -1,0 +1,23 @@
+{
+    "name": "Dagensnyheter.se-minus",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Raderar alla förekomster av länkar till dagensnyheter.se",
+    "content_scripts": [
+        {
+            "matches": ["*://*.dn.se/*"],
+            "js": ["jquery-1.9.1.min.js" ,"script.js"]
+        }
+    ],
+    "permissions": [
+        "*://*.dn.se/*"
+    ],
+    "web_accessible_resources": [
+        "badge.png",
+        "x.png"
+    ],
+    "icons": { "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
